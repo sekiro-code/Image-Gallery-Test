@@ -1,0 +1,81 @@
+.background-image {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.background-image::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(https://free4kwallpapers.com/uploads/originals/2020/09/18/giraffe-wildlife-sunset-wallpaper.jpg);
+  height: 100vh; /* viewport height */
+  width: 100vw; /*viewport width */
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.4;
+}
+
+body {
+  margin: 0px;
+  position: relative;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* horizontal alignment */
+  align-items: center; /* vertical alignment */
+  margin: 10px;
+  border: 2px solid black;
+  background-image: none;
+  background-color: lightgrey;
+}
+
+h1 {
+  display: flex;
+  font-family: fantasy;
+  font-size: 3em;
+  border-bottom: 4px solid hotpink;
+  border-right: 4px solid hotpink;
+  color: hotpink;
+  /* text-shadow: 5px 5px darkgrey; */
+  text-decoration: dashed underline;
+  text-shadow: 4px 4px black;
+  background-color: lightgrey;
+  width: 400px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  /* -moz-box-shadow: 4px 4px 5px #888888;
+    -ms-box-shadow: 4px 4px 5px #888888;
+    -webkit-box-shadow: 4px 4px 5px #888888;
+    -o-box-shadow: 4px 4px 5px #888888; */
+  box-shadow: 4px 4px 5px darkgrey;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: 2s;
+}
+
+img {
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+  transition: all 1s;
+  opacity: 44%;
+}
+
+h1:hover {
+  transform: rotate(360deg);
+  background-color: hotpink;
+  color: white;
+  border: none;
+}
+
+img:hover {
+  transform: scale(1.2);
+  box-shadow: 4px 4px 5px black;
+  opacity: 100%;
+}
